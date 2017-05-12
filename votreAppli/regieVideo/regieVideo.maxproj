@@ -1,8 +1,8 @@
 {
 	"name" : "regieVideo",
 	"version" : 1,
-	"creationdate" : 3573048050,
-	"modificationdate" : 3573048054,
+	"creationdate" : -721919246,
+	"modificationdate" : -717539958,
 	"viewrect" : [ 25.0, 70.0, 300.0, 500.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
@@ -14,6 +14,14 @@
 				"kind" : "patcher",
 				"local" : 1,
 				"toplevel" : 1
+			}
+
+		}
+,
+		"other" : 		{
+			"regieVideo.maxproj" : 			{
+				"kind" : "project",
+				"local" : 1
 			}
 
 		}
@@ -32,5 +40,6 @@
 	"amxdtype" : 1633771873,
 	"readonly" : 0,
 	"devpathtype" : 0,
-	"devpath" : "."
+	"devpath" : ".",
+	"sortmode" : 0
 }
