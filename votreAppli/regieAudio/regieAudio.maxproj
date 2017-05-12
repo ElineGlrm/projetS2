@@ -2,8 +2,8 @@
 	"name" : "regieAudio",
 	"version" : 1,
 	"creationdate" : -721919280,
-	"modificationdate" : -717536825,
-	"viewrect" : [ 18.0, 180.0, 300.0, 500.0 ],
+	"modificationdate" : -717533041,
+	"viewrect" : [ 15.0, 491.0, 300.0, 500.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
 	"showdependencies" : 1,
@@ -17,6 +17,21 @@
 			}
 ,
 			"lecteurAudio.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"syntheseSonore.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"syntheseFM.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"simpleFM~.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
