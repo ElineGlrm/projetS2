@@ -2,8 +2,8 @@
 	"name" : "regieAudio",
 	"version" : 1,
 	"creationdate" : -721919280,
-	"modificationdate" : -717533599,
-	"viewrect" : [ 101.0, 73.0, 300.0, 500.0 ],
+	"modificationdate" : -717533041,
+	"viewrect" : [ 15.0, 491.0, 300.0, 500.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
 	"showdependencies" : 1,
@@ -16,6 +16,11 @@
 				"toplevel" : 1
 			}
 ,
+			"lecteurAudio.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
 			"syntheseSonore.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
@@ -23,6 +28,24 @@
 ,
 			"syntheseFM.maxpat" : 			{
 				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"simpleFM~.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+
+		}
+,
+		"media" : 		{
+			"Mer5.wav" : 			{
+				"kind" : "audiofile",
+				"local" : 1
+			}
+,
+			"Pas.wav" : 			{
+				"kind" : "audiofile",
 				"local" : 1
 			}
 
