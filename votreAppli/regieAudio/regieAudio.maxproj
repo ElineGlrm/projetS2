@@ -1,9 +1,9 @@
 {
 	"name" : "regieAudio",
 	"version" : 1,
-	"creationdate" : 3573048016,
-	"modificationdate" : 3573048022,
-	"viewrect" : [ 393.0, 132.0, 300.0, 500.0 ],
+	"creationdate" : -721919280,
+	"modificationdate" : -717533502,
+	"viewrect" : [ 740.0, 200.0, 300.0, 500.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
 	"showdependencies" : 1,
@@ -14,6 +14,34 @@
 				"kind" : "patcher",
 				"local" : 1,
 				"toplevel" : 1
+			}
+,
+			"filtrage.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+
+		}
+,
+		"media" : 		{
+			"Mer5.wav" : 			{
+				"kind" : "audiofile",
+				"local" : 1,
+				"singleton" : 				{
+					"bootpath" : "~/Downloads",
+					"projectrelativepath" : "../../../../Downloads"
+				}
+
+			}
+,
+			"Pas.wav" : 			{
+				"kind" : "audiofile",
+				"local" : 1,
+				"singleton" : 				{
+					"bootpath" : "~/Downloads",
+					"projectrelativepath" : "../../../../Downloads"
+				}
+
 			}
 
 		}
@@ -32,5 +60,6 @@
 	"amxdtype" : 1633771873,
 	"readonly" : 0,
 	"devpathtype" : 0,
-	"devpath" : "."
+	"devpath" : ".",
+	"sortmode" : 0
 }
