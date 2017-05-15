@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 338.0, 94.0, 1308.0, 781.0 ],
+		"rect" : [ 552.0, 106.0, 1308.0, 781.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -37,6 +37,31 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-16",
+					"maxclass" : "toggle",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 83.0, 575.5, 24.0, 24.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-14",
+					"maxclass" : "newobj",
+					"numinlets" : 3,
+					"numoutlets" : 0,
+					"patching_rect" : [ 223.0, 667.0, 152.0, 22.0 ],
+					"style" : "",
+					"text" : "moduleEnvoiAudio.maxpat"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-13",
 					"maxclass" : "newobj",
@@ -351,7 +376,7 @@
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 336.5, 626.0, 45.0, 45.0 ],
+					"patching_rect" : [ 769.5, 638.0, 45.0, 45.0 ],
 					"style" : ""
 				}
 
@@ -477,6 +502,15 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-13", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-14", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-16", 0 ]
 				}
 
 			}
@@ -626,9 +660,30 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-14", 2 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"order" : 1,
+					"source" : [ "obj-5", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-14", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"order" : 1,
+					"source" : [ "obj-5", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-17", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"order" : 0,
 					"source" : [ "obj-5", 1 ]
 				}
 
@@ -638,6 +693,7 @@
 					"destination" : [ "obj-17", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"order" : 0,
 					"source" : [ "obj-5", 0 ]
 				}
 
@@ -722,11 +778,11 @@
  ],
 		"parameters" : 		{
 			"obj-5::obj-21" : [ "live.gain~[4]", "live.gain~[1]", 0 ],
-			"obj-5::obj-1" : [ "live.gain~[6]", "live.gain~", 0 ],
-			"obj-3::obj-5" : [ "live.gain~", "live.gain~", 0 ],
 			"obj-5::obj-19" : [ "live.gain~[2]", "live.gain~[1]", 0 ],
-			"obj-5::obj-22" : [ "live.gain~[5]", "live.gain~[1]", 0 ],
+			"obj-5::obj-1" : [ "live.gain~[6]", "live.gain~", 0 ],
 			"obj-5::obj-20" : [ "live.gain~[3]", "live.gain~[1]", 0 ],
+			"obj-3::obj-5" : [ "live.gain~", "live.gain~", 0 ],
+			"obj-5::obj-22" : [ "live.gain~[5]", "live.gain~[1]", 0 ],
 			"obj-5::obj-18" : [ "live.gain~[1]", "live.gain~[1]", 0 ]
 		}
 ,
@@ -768,6 +824,12 @@
 			}
 , 			{
 				"name" : "filtrage.maxpat",
+				"bootpath" : "~/Documents/projetS2/votreAppli/regieAudio/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "moduleEnvoiAudio.maxpat",
 				"bootpath" : "~/Documents/projetS2/votreAppli/regieAudio/patchers",
 				"type" : "JSON",
 				"implicit" : 1
