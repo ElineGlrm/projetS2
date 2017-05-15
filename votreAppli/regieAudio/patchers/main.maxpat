@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 85.0, 159.0, 640.0, 480.0 ],
+		"rect" : [ 49.0, 459.0, 640.0, 480.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,27 +38,143 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"comment" : "",
+					"id" : "obj-5",
+					"index" : 0,
+					"maxclass" : "outlet",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 326.0, 366.0, 30.0, 30.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-3",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 334.0, 227.0, 136.0, 22.0 ],
+					"style" : "",
+					"text" : "pedaleWahWah.maxpat"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-49",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 316.083313, 48.0, 150.0, 20.0 ],
+					"style" : "",
+					"text" : "Effet pedaleWahWah"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"data" : 					{
+						"clips" : [ 							{
+								"filename" : "social.aif",
+								"filekind" : "audiofile",
+								"loop" : 1,
+								"content_state" : 								{
+									"quality" : [ "basic" ],
+									"basictuning" : [ 440 ],
+									"originallength" : [ 0.0, "ticks" ],
+									"pitchcorrection" : [ 0 ],
+									"play" : [ 0 ],
+									"formant" : [ 1.0 ],
+									"originallengthms" : [ 0.0 ],
+									"followglobaltempo" : [ 0 ],
+									"speed" : [ 1.0 ],
+									"pitchshift" : [ 1.0 ],
+									"formantcorrection" : [ 0 ],
+									"originaltempo" : [ 120.0 ],
+									"mode" : [ "basic" ],
+									"timestretch" : [ 0 ],
+									"slurtime" : [ 0.0 ]
+								}
+
+							}
+ ]
+					}
+,
+					"id" : "obj-45",
+					"maxclass" : "playlist~",
+					"numinlets" : 1,
+					"numoutlets" : 5,
+					"outlettype" : [ "signal", "signal", "signal", "", "dictionary" ],
+					"patching_rect" : [ 326.0, 82.0, 150.0, 30.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-10",
+					"maxclass" : "ezdac~",
+					"numinlets" : 2,
+					"numoutlets" : 0,
+					"patching_rect" : [ 352.0, 274.551849, 45.0, 45.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-9",
+					"maxclass" : "toggle",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 420.0, 178.5, 24.0, 24.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"angle" : 270.0,
+					"bgcolor" : [ 0.952941, 0.564706, 0.098039, 0.3 ],
+					"id" : "obj-44",
+					"maxclass" : "panel",
+					"mode" : 0,
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 320.083313, 67.0, 179.416672, 273.0 ],
+					"proportion" : 0.39,
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"data" : 					{
 						"clips" : [ 							{
 								"filename" : "Mer5.wav",
 								"filekind" : "audiofile",
 								"loop" : 1,
 								"content_state" : 								{
-									"formant" : [ 1.0 ],
-									"pitchshift" : [ 1.0 ],
-									"timestretch" : [ 0 ],
-									"basictuning" : [ 440 ],
-									"pitchcorrection" : [ 0 ],
-									"originallengthms" : [ 0.0 ],
-									"formantcorrection" : [ 0 ],
-									"slurtime" : [ 0.0 ],
 									"quality" : [ "basic" ],
+									"basictuning" : [ 440 ],
 									"originallength" : [ 0.0, "ticks" ],
-									"speed" : [ 1.0 ],
+									"pitchcorrection" : [ 0 ],
 									"play" : [ 0 ],
-									"mode" : [ "basic" ],
+									"formant" : [ 1.0 ],
+									"originallengthms" : [ 0.0 ],
 									"followglobaltempo" : [ 0 ],
-									"originaltempo" : [ 120.0 ]
+									"speed" : [ 1.0 ],
+									"pitchshift" : [ 1.0 ],
+									"formantcorrection" : [ 0 ],
+									"originaltempo" : [ 120.0 ],
+									"mode" : [ "basic" ],
+									"timestretch" : [ 0 ],
+									"slurtime" : [ 0.0 ]
 								}
 
 							}
@@ -327,10 +443,58 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-10", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"order" : 0,
+					"source" : [ "obj-3", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-10", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"order" : 1,
+					"source" : [ "obj-3", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-5", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"order" : 2,
+					"source" : [ "obj-3", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-3", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-45", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-6", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-3", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-9", 0 ]
 				}
 
 			}
@@ -354,6 +518,18 @@
 				"name" : "Mer5.wav",
 				"bootpath" : "~/Downloads",
 				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "social.aif",
+				"bootpath" : "~/Documents/projetS2/votreAppli/regieAudio/media",
+				"type" : "AIFF",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "pedaleWahWah.maxpat",
+				"bootpath" : "~/Documents/projetS2/ressourcesMAX",
+				"type" : "JSON",
 				"implicit" : 1
 			}
  ],
@@ -460,8 +636,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"fontsize" : [ 12.059008 ],
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+					"fontsize" : [ 12.059008 ]
 				}
 ,
 				"parentstyle" : "",

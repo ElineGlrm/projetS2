@@ -2,8 +2,8 @@
 	"name" : "regieAudio",
 	"version" : 1,
 	"creationdate" : -721919280,
-	"modificationdate" : -717533502,
-	"viewrect" : [ 740.0, 200.0, 300.0, 500.0 ],
+	"modificationdate" : -717283993,
+	"viewrect" : [ 0.0, 47.0, 300.0, 247.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
 	"showdependencies" : 1,
@@ -20,28 +20,23 @@
 				"kind" : "patcher",
 				"local" : 1
 			}
+,
+			"pedaleWahWah.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
 
 		}
 ,
 		"media" : 		{
 			"Mer5.wav" : 			{
 				"kind" : "audiofile",
-				"local" : 1,
-				"singleton" : 				{
-					"bootpath" : "~/Downloads",
-					"projectrelativepath" : "../../../../Downloads"
-				}
-
+				"local" : 1
 			}
 ,
 			"Pas.wav" : 			{
 				"kind" : "audiofile",
-				"local" : 1,
-				"singleton" : 				{
-					"bootpath" : "~/Downloads",
-					"projectrelativepath" : "../../../../Downloads"
-				}
-
+				"local" : 1
 			}
 
 		}
