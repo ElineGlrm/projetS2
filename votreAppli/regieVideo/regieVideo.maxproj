@@ -2,8 +2,8 @@
 	"name" : "regieVideo",
 	"version" : 1,
 	"creationdate" : -721919246,
-	"modificationdate" : -717281160,
-	"viewrect" : [ 133.0, 466.0, 300.0, 500.0 ],
+	"modificationdate" : -717274592,
+	"viewrect" : [ 70.0, 200.0, 300.0, 500.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
 	"showdependencies" : 1,
@@ -16,12 +16,12 @@
 				"toplevel" : 1
 			}
 ,
-			"lecteurVideo.maxpat" : 			{
+			"niveauDeGris.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
 ,
-			"detectionEnveloppe.maxpat" : 			{
+			"effet1.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
@@ -29,25 +29,6 @@
 		}
 ,
 		"media" : 		{
-			"DSC02255.JPG" : 			{
-				"kind" : "imagefile",
-				"local" : 1
-			}
-,
-			"DSC02256.JPG" : 			{
-				"kind" : "imagefile",
-				"local" : 1
-			}
-,
-			"DSC02257.JPG" : 			{
-				"kind" : "imagefile",
-				"local" : 1
-			}
-,
-			"Mer5.wav" : 			{
-				"kind" : "audiofile",
-				"local" : 1
-			}
 
 		}
 
