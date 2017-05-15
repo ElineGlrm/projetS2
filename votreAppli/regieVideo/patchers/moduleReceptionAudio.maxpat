@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 1019.0, 242.0, 640.0, 480.0 ],
+		"rect" : [ 741.0, 151.0, 822.0, 653.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,13 +38,37 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-5",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 333.5, 352.0, 63.0, 20.0 ],
+					"style" : "",
+					"text" : "audio R"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-4",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 200.5, 362.0, 63.0, 20.0 ],
+					"style" : "",
+					"text" : "audio L"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"comment" : "",
-					"id" : "obj-8",
-					"index" : 0,
+					"id" : "obj-2",
+					"index" : 2,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 303.0, 276.0, 30.0, 30.0 ],
+					"patching_rect" : [ 333.5, 307.0, 30.0, 30.0 ],
 					"style" : ""
 				}
 
@@ -52,12 +76,12 @@
 , 			{
 				"box" : 				{
 					"comment" : "",
-					"id" : "obj-7",
-					"index" : 0,
+					"id" : "obj-1",
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 220.0, 280.0, 30.0, 30.0 ],
+					"patching_rect" : [ 217.0, 314.0, 30.0, 30.0 ],
 					"style" : ""
 				}
 
@@ -71,7 +95,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "signal", "signal", "" ],
-					"patching_rect" : [ 243.0, 212.0, 79.0, 22.0 ],
+					"patching_rect" : [ 239.0, 210.0, 79.0, 22.0 ],
 					"style" : "",
 					"text" : "jit.release~ 2"
 				}
@@ -86,9 +110,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "jit_matrix", "", "" ],
-					"patching_rect" : [ 239.0, 143.0, 131.0, 22.0 ],
+					"patching_rect" : [ 240.0, 144.0, 175.0, 22.0 ],
 					"style" : "",
-					"text" : "jit.net.recv @port 8002"
+					"text" : "jit.net.recv @port #1"
 				}
 
 			}
@@ -104,7 +128,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-7", 0 ],
+					"destination" : [ "obj-1", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-14", 0 ]
@@ -113,16 +137,14 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-8", 0 ],
+					"destination" : [ "obj-2", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-14", 1 ]
 				}
 
 			}
- ],
-		"dependency_cache" : [  ],
-		"autosave" : 0
+ ]
 	}
 
 }

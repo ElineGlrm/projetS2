@@ -2,7 +2,7 @@
 	"name" : "regieVideo",
 	"version" : 1,
 	"creationdate" : -721919246,
-	"modificationdate" : -717534729,
+	"modificationdate" : -717283586,
 	"viewrect" : [ 23.0, 244.0, 300.0, 500.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
@@ -21,15 +21,24 @@
 				"local" : 1
 			}
 ,
+			"envoiAud.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
 			"mixageVideo.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
 ,
-			"envoiAud.maxpat" : 			{
+			"mixageAudio.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
+
+		}
+,
+		"media" : 		{
 
 		}
 

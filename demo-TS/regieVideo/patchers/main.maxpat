@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 259.0, 130.0, 949.0, 683.0 ],
+		"rect" : [ 183.0, 327.0, 949.0, 683.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -54,23 +54,23 @@
 						"clips" : [ 							{
 								"filename" : "social.aif",
 								"filekind" : "audiofile",
-								"loop" : 1,
+								"loop" : 0,
 								"content_state" : 								{
+									"originallength" : [ 0.0, "ticks" ],
+									"originaltempo" : [ 120.0 ],
 									"timestretch" : [ 0 ],
+									"originallengthms" : [ 0.0 ],
+									"followglobaltempo" : [ 0 ],
+									"speed" : [ 1.0 ],
+									"quality" : [ "basic" ],
 									"pitchshift" : [ 1.0 ],
+									"slurtime" : [ 0.0 ],
 									"mode" : [ "basic" ],
 									"pitchcorrection" : [ 0 ],
-									"formantcorrection" : [ 0 ],
-									"originallength" : [ 0.0, "ticks" ],
-									"originallengthms" : [ 0.0 ],
-									"quality" : [ "basic" ],
-									"slurtime" : [ 0.0 ],
 									"formant" : [ 1.0 ],
-									"basictuning" : [ 440 ],
-									"originaltempo" : [ 120.0 ],
 									"play" : [ 0 ],
-									"speed" : [ 1.0 ],
-									"followglobaltempo" : [ 0 ]
+									"formantcorrection" : [ 0 ],
+									"basictuning" : [ 440 ]
 								}
 
 							}
@@ -105,8 +105,8 @@
 					"id" : "obj-16",
 					"maxclass" : "newobj",
 					"numinlets" : 0,
-					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
+					"numoutlets" : 2,
+					"outlettype" : [ "signal", "signal" ],
 					"patching_rect" : [ 71.0, 87.0, 176.0, 22.0 ],
 					"style" : "",
 					"text" : "moduleReceptionAudio.maxpat"
@@ -119,7 +119,7 @@
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 193.5, 215.5, 45.0, 45.0 ],
+					"patching_rect" : [ 192.5, 215.5, 45.0, 45.0 ],
 					"style" : ""
 				}
 
