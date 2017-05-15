@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 205.0, 90.0, 828.0, 703.0 ],
+		"rect" : [ 599.0, 92.0, 948.0, 703.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,14 +38,31 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-3",
+					"fontface" : 0,
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-6",
+					"maxclass" : "number~",
+					"mode" : 2,
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "signal", "float" ],
+					"patching_rect" : [ 52.0, 275.5, 78.0, 22.0 ],
+					"sig" : 0.0,
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-4",
 					"maxclass" : "newobj",
-					"numinlets" : 4,
-					"numoutlets" : 1,
-					"outlettype" : [ "jit_matrix" ],
-					"patching_rect" : [ 509.0, 318.0, 122.0, 22.0 ],
+					"numinlets" : 0,
+					"numoutlets" : 2,
+					"outlettype" : [ "signal", "signal" ],
+					"patching_rect" : [ 316.0, 157.0, 207.0, 22.0 ],
 					"style" : "",
-					"text" : "mixageVideo.maxpat"
+					"text" : "moduleReceptionAudio.maxpat 8003"
 				}
 
 			}
@@ -55,7 +72,7 @@
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 189.0, 495.0, 45.0, 45.0 ],
+					"patching_rect" : [ 215.0, 369.0, 45.0, 45.0 ],
 					"style" : ""
 				}
 
@@ -67,9 +84,9 @@
 					"numinlets" : 0,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "signal" ],
-					"patching_rect" : [ 155.0, 392.0, 177.0, 22.0 ],
+					"patching_rect" : [ 72.0, 157.0, 207.0, 22.0 ],
 					"style" : "",
-					"text" : "moduleReceptionAudio.maxpat"
+					"text" : "moduleReceptionAudio.maxpat 8002"
 				}
 
 			}
@@ -79,6 +96,17 @@
 					"destination" : [ "obj-2", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"order" : 0,
+					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-6", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"order" : 1,
 					"source" : [ "obj-1", 0 ]
 				}
 
@@ -86,12 +114,6 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "moduleReceptionAudio.maxpat",
-				"bootpath" : "~/Documents/projetS2/votreAppli/regieVideo/patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "mixageVideo.maxpat",
 				"bootpath" : "~/Documents/projetS2/votreAppli/regieVideo/patchers",
 				"type" : "JSON",
 				"implicit" : 1
