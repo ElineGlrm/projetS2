@@ -2,26 +2,15 @@
 	"name" : "regieAudio",
 	"version" : 1,
 	"creationdate" : -721919280,
-	"modificationdate" : -717278513,
-	"viewrect" : [ 0.0, 47.0, 397.0, 375.0 ],
+	"modificationdate" : -717277797,
+	"viewrect" : [ 75.0, 129.0, 300.0, 500.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
 	"showdependencies" : 1,
 	"autolocalize" : 0,
 	"contents" : 	{
 		"patchers" : 		{
-			"main.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1,
-				"toplevel" : 1
-			}
-,
-			"lecteurAudio.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"filtrage.maxpat" : 			{
+			"syntheseSonore.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
@@ -31,7 +20,7 @@
 				"local" : 1
 			}
 ,
-			"syntheseSonore.maxpat" : 			{
+			"filtrage.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
@@ -45,11 +34,36 @@
 				"kind" : "patcher",
 				"local" : 1
 			}
+,
+			"main.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"lecteurAudio.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"mixageAudio.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
 
 		}
 ,
 		"media" : 		{
-			"Mer5.wav" : 			{
+			"enfants.mp3" : 			{
+				"kind" : "audiofile",
+				"local" : 1
+			}
+,
+			"mer.wav" : 			{
+				"kind" : "audiofile",
+				"local" : 1
+			}
+,
+			"mouettes.mp3" : 			{
 				"kind" : "audiofile",
 				"local" : 1
 			}
