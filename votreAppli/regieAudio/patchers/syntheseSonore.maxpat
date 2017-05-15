@@ -38,9 +38,22 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-7",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 571.0, 355.0, 83.0, 22.0 ],
+					"style" : "",
+					"text" : "loadmess -19"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"comment" : "",
 					"id" : "obj-3",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -125,11 +138,11 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-13",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 737.0, 90.0, 30.0, 30.0 ],
 					"style" : ""
 				}
@@ -139,11 +152,11 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-12",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 188.0, 90.0, 30.0, 30.0 ],
 					"style" : ""
 				}
@@ -450,25 +463,16 @@
 				}
 
 			}
- ],
-		"parameters" : 		{
-			"obj-5" : [ "live.gain~", "live.gain~", 0 ]
-		}
-,
-		"dependency_cache" : [ 			{
-				"name" : "syntheseFM.maxpat",
-				"bootpath" : "~/Documents/projetS2/votreAppli/regieAudio/patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
 , 			{
-				"name" : "simpleFM~.maxpat",
-				"bootpath" : "~/Documents/projetS2/votreAppli/regieAudio/patchers",
-				"type" : "JSON",
-				"implicit" : 1
+				"patchline" : 				{
+					"destination" : [ "obj-5", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-7", 0 ]
+				}
+
 			}
  ],
-		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "AudioStatus_Menu",
 				"default" : 				{
@@ -571,8 +575,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"fontsize" : [ 12.059008 ],
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+					"fontsize" : [ 12.059008 ]
 				}
 ,
 				"parentstyle" : "",

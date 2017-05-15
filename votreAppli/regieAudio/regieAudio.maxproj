@@ -2,8 +2,8 @@
 	"name" : "regieAudio",
 	"version" : 1,
 	"creationdate" : -721919280,
-	"modificationdate" : -717277612,
-	"viewrect" : [ 75.0, 129.0, 300.0, 500.0 ],
+	"modificationdate" : -717276438,
+	"viewrect" : [ 685.0, 133.0, 300.0, 500.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
 	"showdependencies" : 1,
@@ -50,6 +50,11 @@
 				"kind" : "patcher",
 				"local" : 1
 			}
+,
+			"moduleEnvoiAudio.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
 
 		}
 ,
@@ -69,7 +74,7 @@
 				"local" : 1
 			}
 ,
-			"Pas.wav" : 			{
+			"pas.wav" : 			{
 				"kind" : "audiofile",
 				"local" : 1
 			}
