@@ -2,7 +2,7 @@
 	"name" : "regieAudio",
 	"version" : 1,
 	"creationdate" : -721919280,
-	"modificationdate" : -717277797,
+	"modificationdate" : -717277612,
 	"viewrect" : [ 75.0, 129.0, 300.0, 500.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
@@ -11,16 +11,6 @@
 	"contents" : 	{
 		"patchers" : 		{
 			"syntheseSonore.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"pedaleWahWah.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"filtrage.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
@@ -35,9 +25,20 @@
 				"local" : 1
 			}
 ,
-			"main.maxpat" : 			{
+			"pedaleWahWah.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
+			}
+,
+			"filtrage.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"main.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1,
+				"toplevel" : 1
 			}
 ,
 			"lecteurAudio.maxpat" : 			{
