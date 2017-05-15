@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 599.0, 92.0, 948.0, 703.0 ],
+		"rect" : [ 624.0, 88.0, 948.0, 703.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -47,22 +47,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "float" ],
-					"patching_rect" : [ 52.0, 275.5, 78.0, 22.0 ],
+					"patching_rect" : [ 376.0, 265.5, 78.0, 22.0 ],
 					"sig" : 0.0,
 					"style" : ""
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-4",
-					"maxclass" : "newobj",
-					"numinlets" : 0,
-					"numoutlets" : 2,
-					"outlettype" : [ "signal", "signal" ],
-					"patching_rect" : [ 316.0, 157.0, 207.0, 22.0 ],
-					"style" : "",
-					"text" : "moduleReceptionAudio.maxpat 8003"
 				}
 
 			}
@@ -72,7 +59,7 @@
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 215.0, 369.0, 45.0, 45.0 ],
+					"patching_rect" : [ 539.0, 359.0, 45.0, 45.0 ],
 					"style" : ""
 				}
 
@@ -84,7 +71,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "signal" ],
-					"patching_rect" : [ 72.0, 157.0, 207.0, 22.0 ],
+					"patching_rect" : [ 396.0, 147.0, 207.0, 22.0 ],
 					"style" : "",
 					"text" : "moduleReceptionAudio.maxpat 8002"
 				}
