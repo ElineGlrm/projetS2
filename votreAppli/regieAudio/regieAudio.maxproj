@@ -2,8 +2,8 @@
 	"name" : "regieAudio",
 	"version" : 1,
 	"creationdate" : -721919280,
-	"modificationdate" : -717533041,
-	"viewrect" : [ 15.0, 491.0, 300.0, 500.0 ],
+	"modificationdate" : -717278513,
+	"viewrect" : [ 0.0, 47.0, 397.0, 375.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
 	"showdependencies" : 1,
@@ -17,6 +17,16 @@
 			}
 ,
 			"lecteurAudio.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"filtrage.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"pedaleWahWah.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
