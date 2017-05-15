@@ -2,8 +2,8 @@
 	"name" : "regieAudio",
 	"version" : 1,
 	"creationdate" : -721919280,
-	"modificationdate" : -717281042,
-	"viewrect" : [ 1366.0, 106.0, 300.0, 500.0 ],
+	"modificationdate" : -717277797,
+	"viewrect" : [ 75.0, 129.0, 300.0, 500.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
 	"showdependencies" : 1,
@@ -15,7 +15,12 @@
 				"local" : 1
 			}
 ,
-			"main.maxpat" : 			{
+			"pedaleWahWah.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"filtrage.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
@@ -26,6 +31,11 @@
 			}
 ,
 			"simpleFM~.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"main.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
@@ -58,7 +68,7 @@
 				"local" : 1
 			}
 ,
-			"pas.wav" : 			{
+			"Pas.wav" : 			{
 				"kind" : "audiofile",
 				"local" : 1
 			}
