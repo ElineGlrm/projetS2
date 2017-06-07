@@ -2,8 +2,8 @@
 	"name" : "regieVideo",
 	"version" : 1,
 	"creationdate" : -721919246,
-	"modificationdate" : -715265079,
-	"viewrect" : [ 58.0, 415.0, 300.0, 500.0 ],
+	"modificationdate" : -715261488,
+	"viewrect" : [ 46.0, 207.0, 300.0, 601.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
 	"showdependencies" : 1,
@@ -26,14 +26,69 @@
 				"local" : 1
 			}
 ,
+			"niveauDeGris.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"moduleReceptionAudio.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
 			"if.maxpat" : 			{
-				"kind" : "helpfile",
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"filtrage.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"lecteurAudio.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"mixageAudio.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"moduleEnvoiAudio.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"pedaleWahWah.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"simpleFM~.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"syntheseFM.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"syntheseSonore.maxpat" : 			{
+				"kind" : "patcher",
 				"local" : 1
 			}
 
 		}
 ,
 		"media" : 		{
+			"Mer5.wav" : 			{
+				"kind" : "audiofile",
+				"local" : 1
+			}
+,
 			"DSC02255.JPG" : 			{
 				"kind" : "imagefile",
 				"local" : 1
@@ -49,7 +104,22 @@
 				"local" : 1
 			}
 ,
-			"Mer5.wav" : 			{
+			"enfants.mp3" : 			{
+				"kind" : "audiofile",
+				"local" : 1
+			}
+,
+			"mer.wav" : 			{
+				"kind" : "audiofile",
+				"local" : 1
+			}
+,
+			"mouettes.mp3" : 			{
+				"kind" : "audiofile",
+				"local" : 1
+			}
+,
+			"Pas.wav" : 			{
 				"kind" : "audiofile",
 				"local" : 1
 			}
